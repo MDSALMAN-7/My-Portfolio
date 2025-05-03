@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scroll Header</title>
+  <!-- <link rel="stylesheet" href="style.css"/> -->
+   <style>
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0px;
+  background-color:transparent;
+  color: black;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 1000;
+}
+
+header.scrolled {
+  background-color: white;
+  color:black;
+}
+.bcg{
+    width: 100%;
+    height: 300px;
+    background-image: url('images/html.png');
+    background-size: cover;
+}
+
+   </style>
+</head>
+<body>
+
+  <header id="header">
+    <h1>My Website</h1>
+  </header>
+
+  <main>
+    <section>
+      <!-- <p>Scroll down to see the header change...</p> -->
+      <!-- Dummy content for scrolling -->
+      <div style="height: 2000px;" >
+        <div class="bcg">
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const header = document.getElementById('header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 10) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+  </script>
+</body>
+</html>
