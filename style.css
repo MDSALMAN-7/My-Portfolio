@@ -86,7 +86,7 @@ header.scrolled ul li a:hover {
   }
 
 
-  .project,.skill,.resume,.contact {
+  .project,.myskill,.resume,.contact {
     font-family: "Montserrat", sans-serif;
      font-optical-sizing: auto;
     font-weight: bold;
@@ -127,6 +127,69 @@ header.scrolled ul li a:hover {
 ul li a img{
   width: 50px;
   height: 50px;
+}
+
+
+/* ======================  Skill section =============== */
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skills {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+gap: 25px;
+animation: fadeInUp 1s ease forwards;
+/* opacity: 0;
+transform: translateY(60px); */
+/* transition: all 0.8s ease-out; */
+}
+
+
+
+.skill {
+background: linear-gradient(135deg, black,skyblue);
+color: white;
+padding: 30px 20px;
+text-align: center;
+border-radius: 15px;
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+font-size: 1.1rem;
+position: relative;
+}
+
+.skill i {
+font-size: 2.2rem;
+margin-bottom: 10px;
+display: block;
+animation: pop 0.5s ease;
+}
+
+.skill:hover {
+transform: translateY(-8px) scale(1.05);
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+background: linear-gradient(135deg, #f7971e, #ffd200);
+color: #222;
+}
+
+.skill p {
+margin: 0;
+font-weight: bold;
+font-size: 1rem;
+}
+
+@keyframes fadeInUp {
+from{
+  opacity: 0;
+  transform: translateY(60px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
 }
 
 
