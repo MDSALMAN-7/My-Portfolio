@@ -1,10 +1,8 @@
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik+Wet+Paint&family=Sevillana&family=Tagesschrift&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik+Wet+Paint&family=Sevillana&family=Tagesschrift&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
+        * {
+    margin: 0 !important;
+    padding: 0 !important;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -51,9 +49,9 @@ header.scrolled ul li a:hover {
     font-weight: 500;
 }
 .bcg{
-    width: 100vw;
+    width: 100%;
     height: 70vh;
-    background: url('images/bcg-img.jpg');
+    background: url('image/bcg-img.jpg');
     /* background-color: red; */
     background-size: cover;
     display: flex;
@@ -75,7 +73,8 @@ header.scrolled ul li a:hover {
     transform: translateY(50px);
     animation: slideUpFadeIn 1.2s ease-out forwards;
     animation-delay: 0.5s;
-    margin-left: 10vw;
+    /* margin-left: 100px; */
+    padding-left: 100px;
   }
   
 @keyframes slideUpFadeIn {
@@ -86,132 +85,41 @@ header.scrolled ul li a:hover {
   }
 
 
-  .project,.myskill,.resume,.contact {
-    font-family: "Montserrat", sans-serif;
-     font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-    position: absolute;
-    font-size: 50px;
-    /* font-weight: bold; */
+  /* **************** Projects ***************** */
+
+.technical-card{
+    transition: 0.5s;
+    background-color: rgb(4, 37, 50);
     color: white;
-    opacity: 0;
-    transform: translateY(50px);
-    animation: slideUpFadeIn 1.2s ease-out forwards;
-    animation-delay: 0.5s;
-    /* margin-left: 10vw; */
-    border-bottom: 3px solid rgb(1, 1, 116);
-    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.6);
+}
+.technical-card:hover{
+    box-shadow: 2px 2px 5px 2px rgb(224, 224, 226), -2px -2px 5px 2px rgb(224, 224, 226);
+    transform: translateY(-10px);
+    transition: 0.5s;
 }
 
-
-
-.left{
-    width: 45%;
+  /* ************* Media Quries *********** */
+  .menu{
+    display: none;
 }
 
-
-
-.right{
-    width: 55%;
-    border: 1px solid black;
-}
-.gradient-text {
-  background: linear-gradient(to right, black 50%, skyblue 50%); /* your gradient */
-  -webkit-background-clip: text;       /* clip background to text */
-  -webkit-text-fill-color: transparent; /* make text transparent to show gradient */
-}
-
-
-/**************contact *************/
-ul li a img{
-  width: 50px;
-  height: 50px;
+@media (max-width:600px){
+    #header-child{
+      padding: 10px;
+        display: none !important;
+    }
+    .h3{
+        display: none;
+    }
+    .menu{
+        display: block !important;
+    }  
 }
 
-
-/* ======================  Skill section =============== */
-/* .section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-} */
-
-.skills {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-gap: 25px;
-animation: fadeInUp 1s ease forwards;
-/* opacity: 0;
-transform: translateY(60px); */
-/* transition: all 0.8s ease-out; */
-}
-
-
-
-.skill {
-background: linear-gradient(135deg, black,skyblue);
-color: white;
-padding: 30px 20px;
-text-align: center;
-border-radius: 15px;
-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-font-size: 1.1rem;
-position: relative;
-}
-
-.skill i {
-font-size: 2.2rem;
-margin-bottom: 10px;
-display: block;
-animation: pop 0.5s ease;
-}
-
-.skill:hover {
-transform: translateY(-8px) scale(1.05);
-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
-background: linear-gradient(135deg, #f7971e, #ffd200);
-color: #222;
-}
-
-.skill p {
-margin: 0;
-font-weight: bold;
-font-size: 1rem;
-}
-
-@keyframes fadeInUp {
-from{
-  opacity: 0;
-  transform: translateY(60px);
-}
-to {
-  opacity: 1;
-  transform: translateY(0);
-}
-}
-
-
-
-
-
-
-
-
-/* *************Copy************** */
-
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-    overflow-x: hidden;
-   
-}
 @media(max-width:600px){
    header{
-    height: 300px !important;
+    padding: 10px;
+    /* height: 300px !important; */
    } 
   
    nav ul{
@@ -235,9 +143,10 @@ body{
    
 }
 @media(max-width:800px){
-    /* header{
-     height: 300px !important;
-    }  */
+    header{
+      padding: 10px;
+     /* height: 90px !important; */
+    } 
    
     nav ul{
      display: flex;
@@ -268,100 +177,11 @@ body{
     }
    
  }
-/* header{
-    width: 100%;
-    background-image: url("https://img.freepik.com/free-photo/laptop-with-glowing-screen-table-dark-top-view-copy-space_169016-51607.jpg?semt=ais_hybrid&w=740");
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    
-    height: 450px;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-    
-}  */
-/* nav{
-    box-shadow: 2px 2px 5px rgb(175, 167, 167);
-    padding: 10px;
-   }
-nav ul{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-nav ul li{
-    list-style: none;
-    margin-top: 10px;
-    font-weight:700;
-    font-size: 20px;
-}
-nav ul li a{
-   text-decoration: none;
-   color: black;
-  
-} */
-.container{
-    font-family:arial
-}
 
-.project ,.technical,.about-me ,.html , .css , .javascript , .reactjs , .bootstrap , .mysql,.contact{
-    color:blue;
-    font-weight: bold;
-}
-.technical-card{
-    transition: 0.5s;
-    background-color: rgb(4, 37, 50);
-    color: white;
-}
-.technical-card:hover{
-    box-shadow: 2px 2px 5px 2px rgb(224, 224, 226), -2px -2px 5px 2px rgb(224, 224, 226);
-    transform: translateY(-10px);
-    transition: 0.5s;
-}
-/* section{
-    width: 85%;
-  margin: auto;
-} */
-.l-contect{
-    padding: 60px 60px;
-    font-family: arial;
-}
-footer{
-    background-color: rgb(247, 242, 242);
-    padding: 30px 20px;
-}
-@keyframes profils {
-    from {
-      opacity: 0;
-      transform: translateX(-500px)translateY(360px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0)translateY(0); 
-    }
-  }
-  @keyframes about {
-    from{
-        opacity: 0;
-        transform: translateX(500px)translateY(-360px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0)translateY(0);
-    } 
-  }
-  @keyframes name{
-    from{
-        opacity: 0;
-        transform: translateY(-15px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-  }
-  @keyframes skill{
+
+
+/* *********** Skills ************* */
+ @keyframes skill{
     from{
         opacity: 0;
         transform: translateY(-15px);
@@ -372,32 +192,28 @@ footer{
        
     }
   }
-  .profiles{
-    animation: profils 4s ease-in-out;
-  }
-  .abouts{
-    animation: about 4s ease-in-out;
-    font-family: arial;
-  }
-  .name{
-    animation: name 2s ease-in-out;
-  }
   .skills{
     animation: skill 5s  ease-in-out ;
   }
   #t-skills{
     margin-top: 50px;
   }
+
+
+  /* Contact */
+  .l-contect{
+    padding: 60px 60px;
+    font-family: arial;
+}
   #giticon{
     display: flex;
     justify-content: center;
     align-items: center;  
 }
 
-
-
-
-  
-
-
-
+  /* footer-section */
+  footer{
+    background-color: rgb(247, 242, 242);
+    padding: 30px 20px;
+    /* color:black; */
+}
