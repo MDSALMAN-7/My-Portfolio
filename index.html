@@ -1,334 +1,178 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio of Sharvesh Sanjay - A passionate web developer and designer, mobile applications."
-    />
-    <meta
-      name="keywords"
-      content="Portfolio, Web Developer,Front end developer,Html and Css developer, JavaScript Developer"
-    />
-    <title>MD Salman</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfolio of Md Salman - A passionate web developer and designer, mobile applications." />
+
+    <meta name="keywords" content="Portfolio, Web Developer,Front end developer,Html and Css developer, JavaScript Developer" />
+
+    <title> pr MD Salman</title>
+
+    <!-- =============== link styling ================ -->
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="mediaQ.css" /> -->
-    <script
-      src="https://kit.fontawesome.com/a46e64a86e.js"
-      crossorigin="anonymous"
-    ></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <script src="https://kit.fontawesome.com/a46e64a86e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body class="container-fluid bg-dark text-white">
-    <!-- ======================== Start Header Section ============================ -->
+</head>
+<body class="container-fluid bg-dark text-white p-0 m-0">
+     <!-- Header Section -->
     <header id="header">
-      <nav
-        id="header-child"
-        class="d-flex justify-content-between align-items-center px-4 py-2"
-      >
-        <div>
-          <h3 class="name fw-bold ms-4">MD SALMAN</h3>
-        </div>
-        <div>
-          <ul class="d-flex list-unstyled mb-0">
-            <li>
-              <a href="#home" class="fw-medium mx-3 text-decoration-none"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a href="#resume" class="fw-medium mx-3 text-decoration-none"
-                >Resume</a
-              >
-            </li>
-            <li>
-              <a href="#t-skills" class="fw-medium mx-3 text-decoration-none"
-                >Skills</a
-              >
-            </li>
-            <li>
-              <a href="#project" class="fw-medium mx-3 text-decoration-none"
-                >Project</a
-              >
-            </li>
-            <li>
-              <a href="#Contacts" class="fw-medium mx-3 text-decoration-none"
-                >Contact me</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <nav id="header-child" class="d-flex justify-content-between align-items-center px-4 py-2">
+            <h3 class="name fw-bold ms-4">MD SALMAN</h3>
+            <ul class="d-flex list-unstyled mb-0">
+                <li><a href="#home" class="fw-medium mx-3">Home</a></li>
+                <li><a href="#resume" class="fw-medium mx-3">Resume</a></li>
+                <li><a href="#t-skills" class="fw-medium mx-3">Skills</a></li>
+                <li><a href="#project" class="fw-medium mx-3">Project</a></li>
+                <li><a href="#Contacts" class="fw-medium mx-3">Contact me</a></li>
+            </ul>
+        </nav>
 
-      <div class="menu">
-        <button
-          data-bs-target="#navbar"
-          data-bs-toggle="offcanvas"
-          class="bi bi-justify btn btn-light"
-        ></button>
-        <span class="fs-3 ms-2 fw-bold">MD SALMAN</span>
-      </div>
-      <div class="offcanvas offcanvas-start" id="navbar">
-        <div class="offcanvas-header bg-dark text-white">
-          <h3>MD SALMAN</h3>
-          <button
-            class="btn btn-close btn-close-white"
-            data-bs-dismiss="offcanvas"
-          ></button>
+        <!-- Mobile Menu -->
+        <div class="menu">
+            <button data-bs-toggle="offcanvas" data-bs-target="#navbar" class="bi bi-justify btn btn-light menu-btn"></button>
+            <span class="fs-4 fw-bold text-white menu-name">MD SALMAN</span>
         </div>
-        <div class="offcanvas-body">
-          <ul>
-            <li>Home</li>
-            <li>Resume</li>
-            <li>Skill</li>
-            <li>Project</li>
-            <li>Contact me</li>
-          </ul>
+
+        <div class="offcanvas offcanvas-start bg-dark text-white" id="navbar">
+            <div class="offcanvas-header">
+                <h3 class="mobile-menu-name">MD SALMAN</h3>
+                <button class="btn-close btn-close-white menu-button" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                <li><a href="#home" class="text-white">Home</a></li>
+                <li><a href="#resume" class="text-white">Resume</a></li>
+                <li><a href="#t-skills" class="text-white">Skills</a></li>
+                <li><a href="#project" class="text-white">Project</a></li>
+                <li><a href="#Contacts" class="text-white">Contact me</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
     </header>
 
-    <div class="container-fluid" >
-        <section>
-        <div style="">
-          <div class="bcg">
-            <p class="intro-text ms-5">
-              Hi, <br />I'm <span class="textShadow">MD</span> Salman, <br />
-              Front End Developer
+        <!-- Hero Section -->
+    <section >
+        <div class="bcg">
+            <p class="intro-text">
+                Hi, <br />I'm <span class="text-warning">MD</span> Salman,<br />
+                Front End Developer
             </p>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <!-- ============ About me =================== -->
-        <section id="about" class="about mt-4 ">
-          <h2 class="text-center fw-bold about-me">About Me</h2>
-         <div class="row d-flex ">
-          <div class="col-12 col-sm-12 col-lg-6 d-flex justify-content-center profiles ">
-            <img src="./image/javascript.png" class="rounded rounded-circle" width="400"height="400" alt="Md Salman">
-          </div>
-         <div class="col-12 col-sm-12 col-lg-6 fs-5 d-flex justify-content-center align-items-center">
-          <p id="#about" class="abouts">
-            Hello! I'm Md Salman. I've completed my gradution in BCA(Computer Application), a passionate and creative frontend developer with experience in building modern web applications using HTML, CSS, Bootstrap and JavaScript as well as ReactJs . I focus on delivering high-quality, pixel-perfect, and responsive websites that offer exceptional user experiences.
+
+    <div class="container my-5">
+        <!-- About Section  -->
+    <section id="about" class="about mt-4">
+      <h2 class="text-center fw-bold about-me animate__animated animate__fadeInDown">About Me</h2>
+      <div class="row align-items-center">
+        <!-- Profile Image -->
+        <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center animate__animated animate__fadeInLeft">
+          <img src="images/css.png" class="rounded-circle img-fluid" width="300" alt="Md Ashif Akhtar">
+        </div>
+
+        <!-- About Text -->
+        <div class="col-12 col-lg-6 animate__animated animate__fadeInRight">
+          <p class="abouts fs-5">
+            Hello! I'm <strong>Md Ashif Akhtar</strong>. I’ve completed my graduation in BCA (Computer Applications). I’m a passionate and creative <strong>frontend developer</strong> with experience in building modern web applications using <strong>HTML, CSS, Bootstrap, JavaScript</strong>, and <strong>ReactJS</strong>. I focus on delivering high-quality, pixel-perfect, and responsive websites that offer exceptional user experiences.
           </p>
-         </div>
+        </div>
+      </div>
+    </section>
 
-         </div>
-        </section>
+    <!-- Project section  -->
+    
+    <section id="project">
+        <h2 class="text-center fw-bold project-title" data-aos="fade-down">Projects</h2>
+        <div class="row g-4">
 
-        <!-- ================ Projects ================ -->
-        <section id="project">
-          <h2 class="text-center fw-bold project border border-2 bg-dark text-white p-1 w-100 my-4">Projects</h2>
-          <div class="row">
-            <div class="col-12 col-sm-12 col-lg-4 ">
-              <div class="card px-4 py-2 technical-card">
-                 <div class="carousel slide" data-bs-ride="carousel" id="eduport">
-                  <div class="carousel-inner text-center">
-                    <div class="carousel-item active " >
-                      <img src="./images/edu-1.png"height="200" alt="">
+            <!-- Project Card Template -->
+            <!-- Project 1 -->
+            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+            <div class="card technical-card p-3">
+                <div id="carouselEduport" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./images/edu-1.png" height="200" class="d-block w-100" alt="Eduport 1">
                     </div>
                     <div class="carousel-item">
-                      <img src="./images/edu-2.png"height="200" alt="">
+                    <img src="./images/edu-2.png" height="200" class="d-block w-100" alt="Eduport 2">
                     </div>
                     <div class="carousel-item">
-                      <img src="./images/edu-3.png"height="200" alt="">
+                    <img src="./images/edu-3.png" height="200" class="d-block w-100" alt="Eduport 3">
                     </div>
                     <div class="carousel-item">
-                      <img src="./images/edu-4.png"height="200" alt="">
+                    <img src="./images/edu-4.png" height="200" class="d-block w-100" alt="Eduport 4">
                     </div>
                     <div class="carousel-item">
-                      <img src="./images/edu-5.png"height="200" alt="">
+                    <img src="./images/edu-5.png" height="200" class="d-block w-100" alt="Eduport 5">
                     </div>
-                  </div>
-                 </div>
-                 <h3 class="text-center text-info mt-4 fw-bold">Project Name </h3>
-                 <p class="text-center">Eduport-templete Clone</p>
-                 <h3 class="text-center text-info fw-bold">Uses Skills</h3>
-                 <p>Built a responsive Eduport clone using HTML, CSS,Bootstrap and JavaScript. Integrated dynamic content and responsive layouts.</p>
-                 <h3 class="text-center text-info fw-bold">Project Link</h3>
-                  <a class="text-decoration-none text-center" href=" https://ashif82.github.io/eduport-tamplete/"target="_blank">Eduport-template-click here</a>
-                  <a class="text-decoration-none text-center" href="https://ashif82.github.io/eduport-tamplete/"target="_blank">this is for only git hub</a>
-                 </div>
-                 </div>
+                </div>
+                </div>
+                <h5 class="text-info text-center mt-3 fw-bold">Eduport Template Clone</h5>
+                <p>Built a responsive Eduport clone using HTML, CSS, Bootstrap, and JavaScript. Integrated dynamic content and layouts.</p>
+                <a href="https://ashif82.github.io/eduport-tamplete/" target="_blank" class="project-link">Live Site</a>
+                <a href="https://github.com/ashif82/eduport-tamplete" target="_blank" class="project-link">GitHub Code</a>
+            </div>
+            </div>
 
-                 <div class="col-12 col-sm-12 col-lg-4 ">
-                  <div class="card px-4 py-2 technical-card second-project">
-                    <div class="carousel slide" data-bs-ride="carousel" id="eduport">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active w-100">
-                          <img src="./images/shopper-1.png"height="200"class="w-100" alt="">
-                        </div>
-                        <div class="carousel-item w-100">
-                          <img src="./images/shopper-2.png"height="200"class="w-100" alt="">
-                        </div>
-                        <div class="carousel-item w-100">
-                          <img src="./images/shopper-3.png"height="200"class="w-100" alt="">
-                        </div>
-                        <div class="carousel-item w-100">
-                          <img src="./images/shopper-4.png"height="200"class="w-100" alt="">
-                        </div>
-                        <div class="carousel-item w-100">
-                          <img src="./images/shopper-5.png"height="200"class="w-100" alt="">
-                        </div>
-                        <div class="carousel-item w-100">
-                          <img src="./images/shoppper-6.png"height="200"class="w-100" alt="">
-                        </div>
-                      </div>
+            <!-- Project 2 -->
+            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+            <div class="card technical-card p-3">
+                <div id="carouselShopper" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./images/shopper-1.png" height="200" class="d-block w-100" alt="Shopper 1">
                     </div>
-                    <h3 class="text-center text-info mt-4 fw-bold">Project Name </h3>
-                    <p class="text-center">Shopper-templete Clone</p>
-                    <h3 class="text-center text-info fw-bold">Uses Skills</h3>
-                    <p>Built a responsive Shopper clone using HTML, CSS,Bootstrap and JavaScript. Integrated dynamic content and responsive layouts.</p>
-                    <h3 class="text-center text-info fw-bold">Project Link</h3>
-                     <a class="text-decoration-none text-center" href="https://ashif82.github.io/shopper-template/"target="_blank">Shopper-template-click here</a>
-                     <a class="text-decoration-none text-center" href="https://github.com/ashif82/shopper-template"target="_blank">this is for only git hub</a>
-                  </div>
-                 </div>
-
-                 <div class="col-12 col-sm-12 col-lg-4 ">
-                  <div class="card px-4 py-2 technical-card second-project">
-                    <div class="carousel slide" data-bs-ride="carousel" id="eduport">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active w-100">
-                          <img src="./images/freshcart1.png"height="200"class="w-100" alt="">
-                        </div>
-                        <div class="carousel-item w-100">
-                          <img src="./images/freshcart2.png"height="200"class="w-100" alt="">
-                        </div>
-                        <div class="carousel-item w-100">
-                          <img src="./images/freshcard3.png"height="200"class="w-100" alt="">
-                        </div>
-                        <div class="carousel-item w-100">
-                          <img src="./images/freshcard4.png"height="200"class="w-100" alt="">
-                        </div>
-                      </div>
+                    <div class="carousel-item">
+                    <img src="./images/shopper-2.png" height="200" class="d-block w-100" alt="Shopper 2">
                     </div>
-                    <h3 class="text-center text-info mt-4 fw-bold">Project Name </h3>
-                    <p class="text-center">FreshCart Clone</p>
-                    <h3 class="text-center text-info fw-bold">Uses Skills</h3>
-                    <p>Built a responsive FreshCart clone using  CSS,Bootstrap and Reactjs. Integrated dynamic content and responsive layouts.</p>
-                    <h3 class="text-center text-info fw-bold">Project Link</h3>
-                     <a class="text-decoration-none text-center" href="../eduport-templete/index.html"target="_blank">FreshCart-template-click here</a>
-                     <a class="text-decoration-none text-center" href="https://ashif82.github.io/eduport-tamplete/"target="_blank">this is for only git hub</a>
-      
-                  </div>
-                 </div>
-          </div>
-        </section>
-
-        <!-- ======================= Skills =========================== -->
-         <section id="t-skills">
-          <h2 class="text-center technical">Technical Skills</h2>
-          <div class="row">
-           <div class="col-12 col-sm-6 col-lg-4 ">
-            <div class="card technical-card text-center tss ">
-              <div class="card-img">
-                <img src="./images/html.png" class="card-img-top" alt="">
-              </div>
-             <div class="card-body ts">
-              <h3 class="html">HTML</h3>
-              <p>Experience in building semantic, SEO-friendly, and accessible HTML structures.</p>
-             </div>
+                    <div class="carousel-item">
+                    <img src="./images/shopper-3.png" height="200" class="d-block w-100" alt="Shopper 3">
+                    </div>
+                </div>
+                </div>
+                <h5 class="text-info text-center mt-3 fw-bold">Shopper Template Clone</h5>
+                <p>Built a responsive Shopper template using HTML, CSS, Bootstrap, and JavaScript. Focused on UI and responsive design.</p>
+                <a href="https://ashif82.github.io/shopper-template/" target="_blank" class="project-link">Live Site</a>
+                <a href="https://github.com/ashif82/shopper-template" target="_blank" class="project-link">GitHub Code</a>
             </div>
-           </div>
-            
-           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="card technical-card text-center tss ">
-              <div class="card-img">
-                <img src="./images/css.png" class="card-img-top" alt="">
-              </div>
-             <div class="card-body ts">
-              <h3 class="css">CSS</h3>
-              <p>Proficient in designing responsive, modern, and pixel-perfect layouts with CSS3.</p>
-             </div>
             </div>
-           </div>
 
-           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="card technical-card text-center tss ">
-              <div class="card-img">
-                <img src="./images/javascript.png" class="card-img-top" alt="">
-              </div>
-               <div class="card-body ts">
-                <h3 class="javascript">JavaScript</h3>
-                <p>Strong in JavaScript for dynamic content, DOM manipulation, and asynchronous programming.</p>
-               </div>
+            <!-- Project 3 -->
+            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+            <div class="card technical-card p-3">
+                <div id="carouselFreshCart" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./images/freshcart1.png" height="200" class="d-block w-100" alt="Freshcart 1">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./images/freshcart2.png" height="200" class="d-block w-100" alt="Freshcart 2">
+                    </div>
+                </div>
+                </div>
+                <h5 class="text-info text-center mt-3 fw-bold">FreshCart Clone (React)</h5>
+                <p>Created a modern FreshCart clone using React.js, CSS, and Bootstrap. Emphasized reusable components and responsive layout.</p>
+                <a href="../eduport-templete/index.html" target="_blank" class="project-link">Live Demo</a>
+                <a href="https://github.com/ashif82/eduport-tamplete/" target="_blank" class="project-link">GitHub Code</a>
             </div>
-           </div>
-
-           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="card technical-card text-center tss">
-              <div class="card-img">
-                <img src="./images/ReactJS.jpg" class="card-img-top" alt="">
-              </div>
-              <div class="card-body ts">
-                <h3 class="reactjs">React.js</h3>
-                <p>Building scalable, reusable components and managing state with React.js.</p>
-              </div>
-             
             </div>
-           </div>
-
-           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="card technical-card text-center tss ">
-              <div class="card-img">
-                <img src="https://www.openlogic.com/sites/default/files/image/2024-05/image-ol-boostrap-framwork-basics.jpg.jpeg" class="card-img-top" alt="">
-              </div>
-             <div class="card-body ts">
-              <h3 class="bootstrap">Bootstrap</h3>
-              <p>Experience in using Bootstrap to create mobile-first and responsive web pages.</p>
-             </div>
-            </div>
-           </div>
-
-           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="card technical-card text-center tss">
-              <div class="card-img">
-                <img src="./image/mysql.png" class="card-img-top">
-              </div>
-              <div class="card-body ts">
-                <h3 class="mysql">MySQL</h3>
-                <p>Experience in working with relational databases, writing SQL queries for data management.</p>
-              </div>
-            </div>
-           </div>
-          </div>
-        </section>
-        
-        <!-- ============== Contact ================= -->
-
-        <section id="Contacts" class="l-contect" >
-          <h2 class="contact text-center">Contact</h2>
-          
-          <div  id="giticon">
-            <span class="me-2 fs-2"><a class="bi bi-linkedin" href="https://www.linkedin.com/in/md-ashif-akhtar-133481333/"></a></span>
-            <span class="me-2 fs-2"><a class="bi bi-github" href="https://github.com/ashif82"></a></span>
-          </div>
-          <p class="text-center fs-4">Email: salmanmgr811201@gmail.com</p>
-          <p class="text-center fs-4">Mobile : 8171718040</p>
-        </section>
-
-    </div>
-    <footer class="text-center text-dark p-4">
-        &copy; 2025 Md Salman. All rights reserved.
-    </footer>
-
+        </div>
+    </section>
+    
+  </div>
+    
+    <!-- ================== Link Script File ============= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
+
 </body>
-
-
-
 </html>
-
-
-
